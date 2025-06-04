@@ -1,61 +1,270 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# 📚 Biblioteca API – Sistema de Gerenciamento de Biblioteca
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Este é um sistema de gerenciamento de biblioteca desenvolvido em **Laravel**, que permite:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Cadastro e gerenciamento de usuários
+- Cadastro e organização de livros por gênero
+- Controle de empréstimos com datas de devolução e status (Emprestado, Atrasado, Devolvido)
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🚀 Tecnologias Utilizadas
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- [Laravel 10+](https://laravel.com/)
+- PHP 8.1+
+- MySQL 5.7/8.0
+- Composer
+- Insomnia (para testes de API)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 📁 Estrutura da API
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- `User` – Nome, Email, Número de Cadastro
+- `Book` – Título, Autor, Número de Registro, Situação (Disponível ou Emprestado), Gênero
+- `Genre` – Nome do Gênero (Ficção, Romance, etc.)
+- `Loan` – Relação entre Usuário e Livro, com data de devolução e status
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## ⚙️ Instalação e Configuração
 
-## Contributing
+### Pré-requisitos
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- PHP 8.1+
+- Composer
+- MySQL
+- Git
 
-## Code of Conduct
+### Passos
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/PedroHenr1que1/Interview.git
+   cd biblioteca-api
+2. Instale as dependências:
+   ```bash
+   composer install
+3. Instale as dependências:
+   ```bash
+   composer install
+4. Configure o arquivo .env com suas credenciais do banco de dados:
+   ```bash
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=library
+   DB_USERNAME=user
+   DB_PASSWORD=user@2025
+5. Crie o banco de dados biblioteca no MySQL:
+   ```bash
+   CREATE DATABASE library;
+6. Rode as migrations e seeders:
+   ```bash
+   php artisan migrate:fresh --seed
+7. Inicie o servidor:
+   ```bash
+   php artisan serve
 
-## Security Vulnerabilities
+A API estará disponível em:
+    ```bash
+    http://localhost:8000/api
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# 📚 Biblioteca API – Sistema de Gerenciamento de Biblioteca
+
+Este é um sistema de gerenciamento de biblioteca desenvolvido em **Laravel**, que permite:
+
+- Cadastro e gerenciamento de usuários
+- Cadastro e organização de livros por gênero
+- Controle de empréstimos com datas de devolução e status (Emprestado, Atrasado, Devolvido)
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- [Laravel 10+](https://laravel.com/)
+- PHP 8.1+
+- MySQL 5.7/8.0
+- Composer
+- Insomnia (para testes de API)
+
+---
+
+## 📁 Estrutura da API
+
+- `User` – Nome, Email, Número de Cadastro
+- `Book` – Título, Autor, Número de Registro, Situação (Disponível ou Emprestado), Gênero
+- `Genre` – Nome do Gênero (Ficção, Romance, etc.)
+- `Loan` – Relação entre Usuário e Livro, com data de devolução e status
+
+---
+
+## ⚙️ Instalação e Configuração
+
+### Pré-requisitos
+
+- PHP 8.1+
+- Composer
+- MySQL
+- Git
+
+### Passos
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/PedroHenr1que1/Interview.git
+   cd biblioteca-api
+2. Instale as dependências:
+   ```bash
+   composer install
+3. Instale as dependências:
+   ```bash
+   composer install
+4. Configure o arquivo .env com suas credenciais do banco de dados:
+   ```bash
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=library
+   DB_USERNAME=user
+   DB_PASSWORD=user@2025
+5. Crie o banco de dados biblioteca no MySQL:
+   ```bash
+   CREATE DATABASE library;
+6. Rode as migrations e seeders:
+   ```bash
+   php artisan migrate:fresh --seed
+7. Inicie o servidor:
+   ```bash
+   php artisan serve
+
+A API estará disponível em:
+📍 http://localhost:8000/api
+
+
+## 🔁 Endpoints da API
+
+### 🧑‍💼 Usuários
+- GET /api/users
+
+- GET /api/users/{id}
+
+- POST /api/users
+
+- PUT /api/users/{id}
+
+- DELETE /api/users/{id}
+
+### 📚 Livros
+- GET /api/books
+
+- GET /api/books/{id}
+
+- POST /api/books
+
+- PUT /api/books/{id}
+
+- DELETE /api/books/{id}
+
+### 🏷️ Gêneros
+- GET /api/genres
+
+- GET /api/genres/{id}
+
+- POST /api/genres
+
+- PUT /api/genres/{id}
+
+- DELETE /api/genres/{id}
+
+### 📖 Empréstimos
+- GET /api/loans
+
+- GET /api/loans/{id}
+
+- POST /api/loans
+
+- PUT /api/loans/{id} (Devolvido/Atrasado)
+
+- DELETE /api/loans/{id}
+
+## 🔐 Regras de Negócio
+1. Livro só pode ser emprestado se estiver Disponível
+2. Ao emprestar, o status muda para Emprestado
+3. Ao devolver, o status do empréstimo vira Devolvido e o livro volta a Disponível
+
+## 🧪 Testes com Insomnia
+Abra o Insomnia
+
+Vá em Import → From File
+
+Selecione o arquivo insomnia.json
+
+A base da API será http://localhost:8000/api
+
+## 🗂 Estrutura de Pastas Essenciais
+
+```bash
+biblioteca/
+├── app/
+│   ├── Http/
+│   │   └── Controllers/
+│   │       ├── BookController.php
+│   │       ├── Controller.php
+│   │       ├── GenreController.php
+│   │       ├── LoanController.php
+│   │       └── UserController.php
+│   ├── Models/
+│   │   ├── Book.php
+│   │   ├── Genre.php
+│   │   ├── Loan.php
+│   │   └── User.php
+│   └── Providers/
+│       └── AppServiceProvider.php
+│
+├── bootstrap/
+│   └── app.php
+│
+├── config/
+│   └── (arquivos de configuração do Laravel)
+│
+├── database/
+│   ├── migrations/
+│   │   ├── 2025_05_30_164520_create_genres_table.php
+│   │   ├── 2025_05_30_164727_create_books_table.php
+│   │   ├── 2025_05_30_164800_create_users_table.php
+│   │   └── 2025_05_30_164827_create_loans_table.php
+│   ├── seeders/
+│   │   ├── BookSeeder.php
+│   │   ├── DatabaseSeeder.php
+│   │   ├── GenreSeeder.php
+│   │   └── UserSeeder.php
+│   └── database.sqlite 
+│
+├── routes/
+│   └── api.php
+│
+├── insomnia/
+│   └── Insomnia.json (collection para testar a API)
+│
+├── .env
+├── .env.example
+├── .gitignore
+├── composer.json
+├── composer.lock
+├── artisan
+└── README.md
+```
+
+## 👨‍💻 Autor
+Desenvolvido por Pedro Henrique Faria Almeida
+
+Email: Pedrohenriquefaria9@gmail.com
+
+Teste para Desenvolvedor Backend 
