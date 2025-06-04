@@ -123,24 +123,21 @@ Este é um sistema de gerenciamento de biblioteca desenvolvido em **Laravel**, q
 2. Instale as dependências:
    ```bash
    composer install
-3. Instale as dependências:
-   ```bash
-   composer install
-4. Configure o arquivo .env com suas credenciais do banco de dados:
+3. Configure o arquivo .env com suas credenciais do banco de dados:
    ```bash
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
-   DB_DATABASE=library
-   DB_USERNAME=user
-   DB_PASSWORD=user@2025
-5. Crie o banco de dados biblioteca no MySQL:
+   DB_DATABASE=biblioteca
+   DB_USERNAME=root
+   DB_PASSWORD=suasenha
+4. Crie o banco de dados biblioteca no MySQL:
    ```bash
-   CREATE DATABASE library;
-6. Rode as migrations e seeders:
+   CREATE DATABASE biblioteca;
+5. Rode as migrations e seeders:
    ```bash
    php artisan migrate:fresh --seed
-7. Inicie o servidor:
+6. Inicie o servidor:
    ```bash
    php artisan serve
 
