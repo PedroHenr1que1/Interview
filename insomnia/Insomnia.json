@@ -1,0 +1,657 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-06-03T00:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v2025.6.3",
+  "resources": [
+    {
+      "_id": "wrk_70808fbd1ed64a429666b62e53311a89",
+      "parentId": null,
+      "modified": 1748890616726,
+      "created": 1748890616726,
+      "name": "Biblioteca API",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "fld_d8225edcf72c4dc6bfb746ed752ac3d0",
+      "parentId": "wrk_70808fbd1ed64a429666b62e53311a89",
+      "modified": 1748960530886,
+      "created": 1748960530886,
+      "name": "User",
+      "description": "",
+      "environment": {},
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_f2516878f92343428c3900e2bcf90ca8",
+      "parentId": "fld_d8225edcf72c4dc6bfb746ed752ac3d0",
+      "modified": 1748963547092,
+      "created": 1748890616729,
+      "name": "Criar Usuário",
+      "description": "",
+      "method": "POST",
+      "url": "{{ base_url }}/users",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Lucas Souza\",\n  \"email\": \"lucas@example.com\",\n  \"registration_number\": \"2021003\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748961327394.125,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_0b86b92ecb7d4f6e94ebb4641a3f10d1",
+      "parentId": "fld_d8225edcf72c4dc6bfb746ed752ac3d0",
+      "modified": 1748960544620,
+      "created": 1748890616730,
+      "name": "Deletar Usuário",
+      "description": "",
+      "method": "DELETE",
+      "url": "{{ base_url }}/users/1",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1748960537649,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_a8ee6d9dd30a44eb880f687a0e0471d0",
+      "parentId": "fld_d8225edcf72c4dc6bfb746ed752ac3d0",
+      "modified": 1748963555566,
+      "created": 1748890616730,
+      "name": "Listar usuários",
+      "description": "",
+      "method": "GET",
+      "url": "{{ base_url }}/users",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1748961590642.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e6573d307b4b46e0b5e1dbbe323ddf7e",
+      "parentId": "fld_d8225edcf72c4dc6bfb746ed752ac3d0",
+      "modified": 1748963545362,
+      "created": 1748890616730,
+      "name": "Atualizar Usuário",
+      "description": "",
+      "method": "PUT",
+      "url": "{{ base_url }}/users/1",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Lucas Silva\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748961064145.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9ee6143bb085403683d172362b4170f3",
+      "parentId": "fld_d8225edcf72c4dc6bfb746ed752ac3d0",
+      "modified": 1748962684859,
+      "created": 1748962643636,
+      "name": "Lista usuário por id",
+      "description": "",
+      "method": "GET",
+      "url": "{{ base_url }}/users/1",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.1.0"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748962643636,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_ac4d657b6e1e49bc9cb3624c475db5b0",
+      "parentId": "wrk_70808fbd1ed64a429666b62e53311a89",
+      "modified": 1748960559272,
+      "created": 1748960559272,
+      "name": "Book",
+      "description": "",
+      "environment": {},
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_21441e0690ae41bf81647f87f1071320",
+      "parentId": "fld_ac4d657b6e1e49bc9cb3624c475db5b0",
+      "modified": 1748963539317,
+      "created": 1748890616731,
+      "name": "Listar livros",
+      "description": "",
+      "method": "GET",
+      "url": "{{ base_url }}/books",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1748963449111,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_eec3cfd5d14e4b878d6ca18869807b23",
+      "parentId": "fld_ac4d657b6e1e49bc9cb3624c475db5b0",
+      "modified": 1748963540733,
+      "created": 1748890616731,
+      "name": "Criar livro",
+      "description": "",
+      "method": "POST",
+      "url": "{{ base_url }}/books",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"title\": \"Dom Quixote\",\n  \"author\": \"Miguel de Cervantes\",\n  \"register_number\": \"B2004\",\n  \"status\": \"Disponível\",\n  \"genre_id\": 1\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748963449086,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1415171250d4457e872363ca921a6f21",
+      "parentId": "fld_ac4d657b6e1e49bc9cb3624c475db5b0",
+      "modified": 1748963486784,
+      "created": 1748960703791,
+      "name": "Deletar livro",
+      "description": "",
+      "method": "DELETE",
+      "url": "{{ base_url }}/books/5",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.1.0"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748960703791,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b982b3454e1c47a080ea24b9f4c93b44",
+      "parentId": "fld_ac4d657b6e1e49bc9cb3624c475db5b0",
+      "modified": 1748963537749,
+      "created": 1748962037820,
+      "name": "Listar livro por id",
+      "description": "",
+      "method": "GET",
+      "url": "{{ base_url }}/books/2",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.1.0"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748963449161,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_50a77c5756614845928018cdf7e20483",
+      "parentId": "fld_ac4d657b6e1e49bc9cb3624c475db5b0",
+      "modified": 1748963516223,
+      "created": 1748963449061,
+      "name": "Altera livro",
+      "description": "",
+      "method": "PUT",
+      "url": "{{ base_url }}/books/3",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"title\": \"Dom Quixote\",\n  \"author\": \"Miguel de Cervantes\",\n  \"register_number\": \"B2005\",\n  \"status\": \"Disponível\",\n  \"genre_id\": 1\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.1.0"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748963449061,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_071943f2a71b47279a6f8bbdb6ad78ba",
+      "parentId": "wrk_70808fbd1ed64a429666b62e53311a89",
+      "modified": 1748963304643,
+      "created": 1748960584501,
+      "name": "Loan",
+      "description": "",
+      "environment": {},
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_a26f8338771344edb15e3435a3c1392f",
+      "parentId": "fld_071943f2a71b47279a6f8bbdb6ad78ba",
+      "modified": 1748963534795,
+      "created": 1748890616732,
+      "name": "Criar Empréstimo",
+      "description": "",
+      "method": "POST",
+      "url": "{{ base_url }}/loans",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"user_id\": 1,\n  \"book_id\": 2,\n  \"due_date\": \"2025-06-10\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748963367487,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c037759feec14f5f90ee91e9f15af259",
+      "parentId": "fld_071943f2a71b47279a6f8bbdb6ad78ba",
+      "modified": 1748963536191,
+      "created": 1748890616732,
+      "name": "Alterar status",
+      "description": "",
+      "method": "PUT",
+      "url": "{{ base_url }}/loans/1",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"status\": \"Devolvido\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748963367474.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9fd0fef07c1044999d0971a5bedd2ff4",
+      "parentId": "fld_071943f2a71b47279a6f8bbdb6ad78ba",
+      "modified": 1748963533239,
+      "created": 1748963304930,
+      "name": "Lista empréstimos",
+      "description": "",
+      "method": "GET",
+      "url": "{{ base_url }}/loans",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.1.0"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748963367512,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9a03e133668741d5b83a59fabf70554e",
+      "parentId": "fld_071943f2a71b47279a6f8bbdb6ad78ba",
+      "modified": 1748963531686,
+      "created": 1748963341621,
+      "name": "Lista empréstimo por id",
+      "description": "",
+      "method": "GET",
+      "url": "{{ base_url }}/loans/1",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.1.0"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748963367562,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_70390cafff3f451eaa9a80f4a6c148a6",
+      "parentId": "fld_071943f2a71b47279a6f8bbdb6ad78ba",
+      "modified": 1748963391394,
+      "created": 1748963367462,
+      "name": "Deletar empréstimo",
+      "description": "",
+      "method": "DELETE",
+      "url": "{{ base_url }}/loans/1",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.1.0"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748963367462,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_4b96f9f0956146f097c478b013ea9e5b",
+      "parentId": "wrk_70808fbd1ed64a429666b62e53311a89",
+      "modified": 1748963970881,
+      "created": 1748963970881,
+      "name": "Genre",
+      "description": "",
+      "environment": {},
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_5d736fac64474c0189178419035e5c38",
+      "parentId": "fld_4b96f9f0956146f097c478b013ea9e5b",
+      "modified": 1748964501098,
+      "created": 1748890616731,
+      "name": "Listar gêneros",
+      "description": "",
+      "method": "GET",
+      "url": "{{ base_url }}/genres",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1748964445520,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_eb77e8cf18c04ea68c9fa45687355e31",
+      "parentId": "fld_4b96f9f0956146f097c478b013ea9e5b",
+      "modified": 1748964499703,
+      "created": 1748963998834,
+      "name": "Listar gênero por id",
+      "description": "",
+      "method": "GET",
+      "url": "{{ base_url }}/genres/1",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.1.0"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748964445570,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_66abb354cdf14cc3bcdcb90f0bedfb27",
+      "parentId": "fld_4b96f9f0956146f097c478b013ea9e5b",
+      "modified": 1748964116743,
+      "created": 1748964028081,
+      "name": "Deletar gênero",
+      "description": "",
+      "method": "DELETE",
+      "url": "{{ base_url }}/genres/6",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.1.0"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748963973748,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_bccec16f3fe34edab542a84ce40d0f88",
+      "parentId": "fld_4b96f9f0956146f097c478b013ea9e5b",
+      "modified": 1748964502472,
+      "created": 1748964382555,
+      "name": "Criar gênero",
+      "description": "",
+      "method": "POST",
+      "url": "{{ base_url }}/genres",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\":\"Drama\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.1.0"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748964445495,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c4a26f434c8141519753bd9f7c76ac73",
+      "parentId": "fld_4b96f9f0956146f097c478b013ea9e5b",
+      "modified": 1748964497577,
+      "created": 1748964445470,
+      "name": "Altera gênero",
+      "description": "",
+      "method": "PUT",
+      "url": "{{ base_url }}/genres/7",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\":\"Drama\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.1.0"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1748964445470,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "jar_42e1315404d8ff4d6004df7ba1f25b3194e09600",
+      "parentId": "wrk_70808fbd1ed64a429666b62e53311a89",
+      "modified": 1748890616733,
+      "created": 1748890616733,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "env_591e794fe0d14a8f8bf336a33be58365",
+      "parentId": "wrk_70808fbd1ed64a429666b62e53311a89",
+      "modified": 1748890935159,
+      "created": 1748890616728,
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://localhost:8000/api"
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1748890616728,
+      "_type": "environment"
+    }
+  ]
+}
