@@ -1,6 +1,3 @@
-
-
-
 # 📚 Biblioteca API – Sistema de Gerenciamento de Biblioteca
 
 Este é um sistema de gerenciamento de biblioteca desenvolvido em **Laravel**, que permite:
@@ -44,82 +41,6 @@ Este é um sistema de gerenciamento de biblioteca desenvolvido em **Laravel**, q
 1. Clone o repositório:
    ```bash
    git clone https://github.com/PedroHenr1que1/Interview.git
-   cd biblioteca-api
-2. Instale as dependências:
-   ```bash
-   composer install
-3. Instale as dependências:
-   ```bash
-   composer install
-4. Configure o arquivo .env com suas credenciais do banco de dados:
-   ```bash
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=library
-   DB_USERNAME=user
-   DB_PASSWORD=user@2025
-5. Crie o banco de dados biblioteca no MySQL:
-   ```bash
-   CREATE DATABASE library;
-6. Rode as migrations e seeders:
-   ```bash
-   php artisan migrate:fresh --seed
-7. Inicie o servidor:
-   ```bash
-   php artisan serve
-
-A API estará disponível em:
-    ```bash
-    http://localhost:8000/api
-
-
-
-
-# 📚 Biblioteca API – Sistema de Gerenciamento de Biblioteca
-
-Este é um sistema de gerenciamento de biblioteca desenvolvido em **Laravel**, que permite:
-
-- Cadastro e gerenciamento de usuários
-- Cadastro e organização de livros por gênero
-- Controle de empréstimos com datas de devolução e status (Emprestado, Atrasado, Devolvido)
-
----
-
-## 🚀 Tecnologias Utilizadas
-
-- [Laravel 10+](https://laravel.com/)
-- PHP 8.1+
-- MySQL 5.7/8.0
-- Composer
-- Insomnia (para testes de API)
-
----
-
-## 📁 Estrutura da API
-
-- `User` – Nome, Email, Número de Cadastro
-- `Book` – Título, Autor, Número de Registro, Situação (Disponível ou Emprestado), Gênero
-- `Genre` – Nome do Gênero (Ficção, Romance, etc.)
-- `Loan` – Relação entre Usuário e Livro, com data de devolução e status
-
----
-
-## ⚙️ Instalação e Configuração
-
-### Pré-requisitos
-
-- PHP 8.1+
-- Composer
-- MySQL
-- Git
-
-### Passos
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/PedroHenr1que1/Interview.git
-   cd biblioteca-api
 2. Instale as dependências:
    ```bash
    composer install
